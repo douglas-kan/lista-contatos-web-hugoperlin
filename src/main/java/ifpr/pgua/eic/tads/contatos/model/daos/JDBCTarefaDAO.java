@@ -60,7 +60,5 @@ public class JDBCTarefaDAO implements TarefaDAO {
         } catch (SQLException e) {
             return Resultado.erro("Problema ao fazer seleção!! " + e.getMessage());
         }
-
     }
-
 }

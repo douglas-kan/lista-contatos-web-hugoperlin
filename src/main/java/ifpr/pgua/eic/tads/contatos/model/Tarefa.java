@@ -21,7 +21,6 @@ public class Tarefa {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -29,7 +28,6 @@ public class Tarefa {
     public String getTitulo() {
         return titulo;
     }
-
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -37,7 +35,6 @@ public class Tarefa {
     public String getDescricao() {
         return descricao;
     }
-
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
@@ -45,17 +42,14 @@ public class Tarefa {
     public Categoria getCategoria() {
         return categoria;
     }
-
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
-
 
     @Override
     public String toString() {
         return "Tarefa [id=" + id + ", titulo=" + titulo + ", descricao=" + descricao + "]";
     }
-    
     
     
 }

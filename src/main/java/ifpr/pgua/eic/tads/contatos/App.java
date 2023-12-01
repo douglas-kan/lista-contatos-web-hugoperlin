@@ -21,10 +21,6 @@ import ifpr.pgua.eic.tads.contatos.model.repositories.TarefaRepository;
 import ifpr.pgua.eic.tads.contatos.utils.JavalinUtils;
 import io.javalin.Javalin;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -55,7 +51,6 @@ public class App
 
         app.get("/addTarefa",addTarefaController.get);
         app.post("/addTarefa",addTarefaController.post);
-        app.get("/listTarefa",listTarefaController.get);
-        
+        app.get("/listTarefa",listTarefaController.get);       
     }
 }

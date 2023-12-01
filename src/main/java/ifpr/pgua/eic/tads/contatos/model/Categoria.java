@@ -14,7 +14,6 @@ public class Categoria {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -22,7 +21,6 @@ public class Categoria {
     public String getTitulo() {
         return titulo;
     }
-
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -30,11 +28,9 @@ public class Categoria {
     public String getDescricao() {
         return descricao;
     }
-
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 
-    
     
 }

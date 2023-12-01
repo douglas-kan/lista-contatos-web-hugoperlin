@@ -50,5 +50,4 @@ public class ImplTarefaRepository implements TarefaRepository{
         }
         return resultado;
     }
-    
 }
