@@ -31,6 +31,4 @@ public class ListTarefaController {
         html+="</ul><a href=\"/\">Voltar</a></body></html>";
         ctx.html(html);
     };
-
-
 }

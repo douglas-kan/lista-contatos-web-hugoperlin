@@ -8,5 +8,4 @@ public class IndexController {
     public Handler get = (Context ctx)->{
         ctx.render("templates/index.peb");
     };
-
 }

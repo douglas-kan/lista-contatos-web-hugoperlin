@@ -21,5 +21,4 @@ public class FakeContatoDao implements ContatoDAO {
     public Resultado<List<Contato>> listar() {
         return Resultado.sucesso("Contatos listados", lista);
     }
-
 }

@@ -16,7 +16,7 @@ public class JDBCContatoDAO implements ContatoDAO {
 
     private FabricaConexoes fabricaConexao;
 
-    public JDBCContatoDAO(FabricaConexoes fabricaConexao){
+    public JDBCContatoDAO(FabricaConexoes fabricaConexao) {
         this.fabricaConexao = fabricaConexao;
     }
 
@@ -26,8 +26,7 @@ public class JDBCContatoDAO implements ContatoDAO {
         try {
             Connection con = fabricaConexao.getConnection();
 
-            PreparedStatement pstm = con
-                    .prepareStatement("INSERT INTO oo_contatos(nome,email,telefone) VALUES (?,?,?)");
+            PreparedStatement pstm = con.prepareStatement("INSERT INTO oo_contatos(nome,email,telefone) VALUES (?,?,?)");
 
             pstm.setString(1, contato.getNome());
             pstm.setString(2, contato.getEmail());
@@ -66,7 +65,5 @@ public class JDBCContatoDAO implements ContatoDAO {
         } catch (SQLException e) {
             return Resultado.erro(e.getMessage());
         }
-    
     }
-
 }

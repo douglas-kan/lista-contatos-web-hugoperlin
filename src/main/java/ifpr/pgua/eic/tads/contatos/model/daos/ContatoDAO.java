@@ -9,5 +9,4 @@ import ifpr.pgua.eic.tads.contatos.model.Contato;
 public interface ContatoDAO {
     Resultado<Contato> criar(Contato contato);
     Resultado<List<Contato>> listar();
-
 }

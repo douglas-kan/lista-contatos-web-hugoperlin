@@ -43,8 +43,5 @@ public class Tarefa {
     @Override
     public String toString() {
         return "Tarefa [id=" + id + ", titulo=" + titulo + ", descricao=" + descricao + "]";
-    }
-    
-    
-    
+    }   
 }
