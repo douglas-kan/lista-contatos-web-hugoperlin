@@ -11,7 +11,7 @@ public class ImplContatoRepository implements ContatoRepository {
 
     private ContatoDAO dao;
 
-    public ImplContatoRepository(ContatoDAO dao){
+    public ImplContatoRepository(ContatoDAO dao) {
         this.dao = dao;
     }
 
@@ -32,12 +32,10 @@ public class ImplContatoRepository implements ContatoRepository {
         Contato contato = new Contato(nome, telefone, email);
 
         return dao.criar(contato); 
-
     }
 
     @Override
     public Resultado<List<Contato>> listarTodos() {
         return dao.listar(); 
-    }
-    
+    }   
 }

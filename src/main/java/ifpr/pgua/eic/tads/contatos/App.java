@@ -8,17 +8,15 @@ import ifpr.pgua.eic.tads.contatos.controllers.ListTarefaController;
 import ifpr.pgua.eic.tads.contatos.model.Agenda;
 import ifpr.pgua.eic.tads.contatos.model.FabricaConexoes;
 import ifpr.pgua.eic.tads.contatos.model.daos.ContatoDAO;
-import ifpr.pgua.eic.tads.contatos.model.daos.FakeContatoDao;
+//import ifpr.pgua.eic.tads.contatos.model.daos.FakeContatoDao;
 import ifpr.pgua.eic.tads.contatos.model.daos.JDBCContatoDAO;
 import ifpr.pgua.eic.tads.contatos.model.repositories.ContatoRepository;
 import ifpr.pgua.eic.tads.contatos.model.repositories.ImplContatoRepository;
 import ifpr.pgua.eic.tads.contatos.utils.JavalinUtils;
 import io.javalin.Javalin;
 
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main( String[] args ) {
         Javalin app = JavalinUtils.makeApp(8080);
         
         ContatoDAO contatoDao = new JDBCContatoDAO(FabricaConexoes.getInstance());

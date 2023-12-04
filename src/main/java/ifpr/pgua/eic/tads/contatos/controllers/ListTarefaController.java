@@ -1,11 +1,8 @@
 package ifpr.pgua.eic.tads.contatos.controllers;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import ifpr.pgua.eic.tads.contatos.model.Agenda;
-import ifpr.pgua.eic.tads.contatos.model.Contato;
 import ifpr.pgua.eic.tads.contatos.model.Tarefa;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
